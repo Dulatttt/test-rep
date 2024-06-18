@@ -1,0 +1,197 @@
+/* Reset для body и html */
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    color: #444;
+    background-color: #f4f4f4;
+}
+
+/* Стили для ссылок */
+a {
+    color: #0059b2;
+    text-decoration: none;
+}
+a:hover {
+    color: #cc0000;
+    text-decoration: underline;
+}
+
+/* Clearfix */
+.clear::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Стили для шапки сайта */
+.header {
+    background: #3f4137;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Стили для логотипа */
+.logo {
+    background: url('../images/logo.png') no-repeat center;
+    width: 70px;
+    height: 60px;
+    display: inline-block;
+}
+
+/* Стили для основного меню */
+ul.mainmenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+ul.mainmenu li {
+    margin: 0 20px;
+}
+ul.mainmenu li.logo {
+    margin: 0;
+}
+ul.mainmenu li.last {
+    margin-left: auto;
+}
+
+/* Стили для пунктов основного меню */
+ul.mainmenu li a {
+    color: #fdc073;
+    text-decoration: none;
+    font-size: 20px;
+}
+ul.mainmenu li a:hover {
+    color: #fda83d;
+}
+
+/* Основной контейнер страницы */
+.table-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Контейнер для основного контента и правого сайдбара */
+.table-content {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    padding: 20px;
+}
+
+/* Основной контент */
+.content {
+    flex: 1;
+    background-color: #fff;
+    padding: 40px;
+    box-sizing: border-box;
+    margin-right: 20px;
+    border-radius: 5px;
+    order: 1; /* Определяет порядок элементов в flex-контейнере */
+}
+
+/* Правый сайдбар */
+.right-sidebar {
+    width: 300px; /* Увеличиваем ширину сайдбара до 300px */
+    background: #eee;
+    border-left: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    order: 2; /* Определяет порядок элементов в flex-контейнере */
+}
+
+
+/* Стили для списка категорий в правом сайдбаре */
+.right-sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+.right-sidebar ul li {
+    margin-top: 30px;
+    color: #999;
+}
+.right-sidebar ul li.selected {
+    color: #0059b2;
+}
+.right-sidebar ul li a {
+    color: #444;
+    text-decoration: none;
+}
+.right-sidebar ul li a:hover {
+    color: #cc0000;
+}
+
+/* Стили для подвала сайта */
+#footer {
+    box-sizing: border-box;
+    background: #3f4137;
+    padding: 20px;
+    color: #aaa;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Arial, Helvetica;
+    text-align: left;
+}
+#footer a {
+    text-decoration: underline;
+    color: #aaa;
+}
+#footer p {
+    margin: 5px 0;
+}
+
+/* Стили для списка статей */
+.list-articles {
+    list-style: none;
+    padding: 0;
+}
+
+.list-articles li {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.list-articles h3 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.list-articles p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Стили для кнопки "Читать" */
+.link-read-post {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.link-read-post a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0059b2;
+    color: #fff;
+    text-decoration: none;
+    border: none; /* Убираем границу */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.link-read-post a:hover {
+    background-color: #003d80;
+}
+
